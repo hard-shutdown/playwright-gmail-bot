@@ -22,7 +22,6 @@ const create = async () => {
     const page = await browser.newPage()
     const ctx = await page.context()
     await ctx.addCookies([{ name: "__playwright", value: "true", url: "https://accounts.google.com" }])
-    await addCookie(ctx, 'APISID=HYmtyxSZGqeEmkgG/APrEQsHErn9CFohcf; SAPISID=sVY94s-laoxW4t0g/Au9LkrFZ8vy4I70Im; __Secure-1PAPISID=sVY94s-laoxW4t0g/Au9LkrFZ8vy4I70Im; __Secure-3PAPISID=sVY94s-laoxW4t0g/Au9LkrFZ8vy4I70Im; SEARCH_SAMESITE=CgQI-ZUB; OTZ=6608339_80_84_104220_80_446880; SID=Mwi6UnlbHuKBzWSRcW1Zu1VwRW_HnmfahGqLbW5pBIWPhA7UcqoCCgTj8Wshs7iH4OoV3w.; 1P_JAR=2022-08-04-01; OGPC=19027681-1:19022552-1:577841152-2:19030427-1:; SIDCC=AEf-XMS-snxDO4cTcgLRsQ-zTsWukgcywIUxTxMFDPnGgfiV6s_uWBos7XgT7OPW4quhZqTi97E', "https://.google.com")
     const infoDict = [randomNames.first(), randomNames.last(), ("@#$" + sha512_224(randomNames.first() + randomNames.last() + Math.random() + Math.random())).substring(0, 10)]
 
     await page.goto("https://accounts.google.com/signup/v2/webcreateaccount?continue=https%3A%2F%2Faccounts.google.com%2FManageAccount%3Fnc%3D1&dsh=S-2046073998%3A1659575107246983&biz=false&flowName=GlifWebSignIn&flowEntry=SignUp")
