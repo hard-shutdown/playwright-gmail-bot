@@ -1,0 +1,24 @@
+{
+  "name": "playwright-gmail-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hard-shutdown/playwright-gmail-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hard-shutdown/playwright-gmail-bot/issues"
+  },
+  "homepage": "https://github.com/hard-shutdown/playwright-gmail-bot#readme",
+  "dependencies": {
+    "js-sha512": "^0.8.0",
+    "playwright": "^1.24.2",
+    "random-name": "^0.1.2"
+  }
+}
